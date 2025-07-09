@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Clock with tally design</title>
+		<link rel="stylesheet" href="style.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	</head>
+	<body>
+		<svg class="clock" viewBox="0 0 140 140" width="140px" height="140px" role="img">
+			<g fill="currentcolor" font-size="12" transform="translate(0,14)">
+				<text x="20" text-anchor="middle">Hour</text>
+
+				<text x="70" text-anchor="middle">Minute</text>
+
+				<text x="120" text-anchor="middle">Second</text>
+			</g>
+
+			<g stroke="currentcolor" stroke-width="2" stroke-linecap="round">
+				<polyline points="45 2,45 138" />
+
+				<polyline points="95 2,95 138" />
+			</g>
+
+			<g stroke="currentcolor" stroke-width="2" stroke-linecap="round" transform="translate(0,20)">
+				<g class="clock__column" data-column="h">
+					<g class="clock__digit-strokes" data-strokes="0" transform="translate(2,2)">
+						<polyline class="clock__digit-stroke" points="2 0,2 16" />
+						
+						<polyline class="clock__digit-stroke" points="6 0,6 16" />
+
+						<polyline class="clock__digit-stroke" points="10 0,10 16" />
+
+						<polyline class="clock__digit-stroke" points="14 0,14 16" />
+
+						<polyline class="clock__digit-stroke" points="0 2,16 14" />
+					</g>
+
+					<g class="clock__digit-strokes" data-strokes="0" transform="translate(22,2)">
+						<polyline class="clock__digit-stroke" points="2 0,2 16" />
+
+						<polyline class="clock__digit-stroke" points="6 0,6 16" />
+
+						<polyline class="clock__digit-stroke" points="10 0,10 16" />
+
+						<polyline class="clock__digit-stroke" points="14 0,14 16" />
+
+						<polyline class="clock__digit-stroke" points="0 2,16 14" />
+					</g>
+
+					<g class="clock__digit-strokes" data-strokes="0" transform="translate(2,22)">
+						<polyline class="clock__digit-stroke" points="2 0,2 16" />
+
+						<polyline class="clock__digit-stroke" points="6 0,6 16" />
+
+						<polyline class="clock__digit-stroke" points="10 0,10 16" />
+
+						<polyline class="clock__digit-stroke" points="14 0,14 16" />
+
+						<polyline class="clock__digit-stroke" points="0 2,16 14" />
+					</g>
+
+					<g class="clock__digit-strokes" data-strokes="0" transform="translate(22,22)">
+						<polyline class="clock__digit-stroke" points="2 0,2 16" />
+
+						<polyline class="clock__digit-stroke" points="6 0,6 16" />
+
+						<polyline class="clock__digit-stroke" points="10 0,10 16" />
+
+						<polyline class="clock__digit-stroke" points="14 0,14 16" />
+
+						<polyline class="clock__digit-stroke" points="0 2,16 14" />
+					</g>
+
+					<g class="clock__digit-strokes" data-strokes="0" transform="translate(2,42)">
+						<polyline class="clock__digit-stroke" points="2 0,2 16" />
+
+						<polyline class="clock__digit-stroke" points="6 0,6 16" />
+
+						<polyline class="clock__digit-stroke" points="10 0,10 16" />
+					</g>
+				</g>
+
+				<g class="clock__column" data-column="m" transform="translate(50,0)">
+					<g class="clock__digit-strokes" data-strokes="0" transform="translate(2,2)">
+						<polyline class="clock__digit-stroke" points="2 0,2 16" />
+						<polyline class="clock__digit-stroke" points="6 0,6 16" />
+
+						<polyline class="clock__digit-stroke" points="10 0,10 16" />
+
+						<polyline class="clock__digit-stroke" points="14 0,14 16" />
+
+						<polyline class="clock__digit-stroke" points="0 2,16 14" />
+					</g>
+
+					<g class="clock__digit-strokes" data-strokes="0" transform="translate(22,2)">
+						<polyline class="clock__digit-stroke" points="2 0,2 16" />
+
+						<polyline class="clock__digit-stroke" points="6 0,6 16" />
+
+						<polyline class="clock__digit-stroke" points="10 0,10 16" />
+
+						<polyline class="clock__digit-stroke" points="14 0,14 16" />
+
+						<polyline class="clock__digit-stroke" points="0 2,16 14" />
+					</g>
+
+					<g class="clock__digit-strokes" data-strokes="0" transform="translate(2,22)">
+						<polyline class="clock__digit-stroke" points="2 0,2 16" />
+
+						<polyline class="clock__digit-stroke" points="6 0,6 16" />
+
+						<polyline class="clock__digit-stroke" points="10 0,10 16" />
+
+						<polyline class="clock__digit-stroke" points="14 0,14 16" />
+
+						<polyline class="clock__digit-stroke" points="0 2,16 14" />
+					</g>
+
+					<g class="clock__digit-strokes" data-strokes="0" transform="translate(22,22)">
+						<polyline class="clock__digit-stroke" points="2 0,2 16" />
+
+						<polyline class="clock__digit-stroke" points="6 0,6 16" />
+
+						<polyline class="clock__digit-stroke" points="10 0,10 16" />
+
+						<polyline class="clock__digit-stroke" points="14 0,14 16" />
+
+						<polyline class="clock__digit-stroke" points="0 2,16 14" />
+					</g>
+
+					<g class="clock__digit-strokes" data-strokes="0" transform="translate(2,42)">
+						<polyline class="clock__digit-stroke" points="2 0,2 16" />
+
+						<polyline class="clock__digit-stroke" points="6 0,6 16" />
+
+						<polyline class="clock__digit-stroke" points="10 0,10 16" />
+
+						<polyline class="clock__digit-stroke" points="14 0,14 16" />
+
+						<polyline class="clock__digit-stroke" points="0 2,16 14" />
+					</g>
+
+					<g class="clock__digit-strokes" data-strokes="0" transform="translate(22,42)">
+						<polyline class="clock__digit-stroke" points="2 0,2 16" />
+
+						<polyline class="clock__digit-stroke" points="6 0,6 16" />
+
+						<polyline class="clock__digit-stroke" points="10 0,10 16" />
+
+						<polyline class="clock__digit-stroke" points="14 0,14 16" />
+
+						<polyline class="clock__digit-stroke" points="0 2,16 14" />
+					</g>
+
+					<g class="clock__digit-strokes" data-strokes="0" transform="translate(2,62)">
+						<polyline class="clock__digit-stroke" points="2 0,2 16" />
+
+						<polyline class="clock__digit-stroke" points="6 0,6 16" />
+
+						<polyline class="clock__digit-stroke" points="10 0,10 16" />
+
+						<polyline class="clock__digit-stroke" points="14 0,14 16" />
+
+						<polyline class="clock__digit-stroke" points="0 2,16 14" />
+					</g>
+
+					<g class="clock__digit-strokes" data-strokes="0" transform="translate(22,62)">
+						<polyline class="clock__digit-stroke" points="2 0,2 16" />
+
+						<polyline class="clock__digit-stroke" points="6 0,6 16" />
+
+						<polyline class="clock__digit-stroke" points="10 0,10 16" />
+
+						<polyline class="clock__digit-stroke" points="14 0,14 16" />
+
+						<polyline class="clock__digit-stroke" points="0 2,16 14" />
+					</g>
+
+					<g class="clock__digit-strokes" data-strokes="0" transform="translate(2,82)">
+						<polyline class="clock__digit-stroke" points="2 0,2 16" />
+
+						<polyline class="clock__digit-stroke" points="6 0,6 16" />
+
+						<polyline class="clock__digit-stroke" points="10 0,10 16" />
+
+						<polyline class="clock__digit-stroke" points="14 0,14 16" />
+						<polyline class="clock__digit-stroke" points="0 2,16 14" />
+					</g>
+
+					<g class="clock__digit-strokes" data-strokes="0" transform="translate(22,82)">
+						<polyline class="clock__digit-stroke" points="2 0,2 16" />
+
+						<polyline class="clock__digit-stroke" points="6 0,6 16" />
+
+						<polyline class="clock__digit-stroke" points="10 0,10 16" />
+
+						<polyline class="clock__digit-stroke" points="14 0,14 16" />
+
+						<polyline class="clock__digit-stroke" points="0 2,16 14" />
+					</g>
+					
+					<g class="clock__digit-strokes" data-strokes="0" transform="translate(2,102)">
+						<polyline class="clock__digit-stroke" points="2 0,2 16" />
+
+						<polyline class="clock__digit-stroke" points="6 0,6 16" />
+
+						<polyline class="clock__digit-stroke" points="10 0,10 16" />
+
+						<polyline class="clock__digit-stroke" points="14 0,14 16" />
+
+						<polyline class="clock__digit-stroke" points="0 2,16 14" />
+					</g>
+
+					<g class="clock__digit-strokes" data-strokes="0" transform="translate(22,102)">
+						<polyline class="clock__digit-stroke" points="2 0,2 16" />
+
+						<polyline class="clock__digit-stroke" points="6 0,6 16" />
+
+						<polyline class="clock__digit-stroke" points="10 0,10 16" />
+
+						<polyline class="clock__digit-stroke" points="14 0,14 16" />
+					</g>
+				</g>
+
+				<g class="clock__column" data-column="s" transform="translate(100,0)">
+					<g class="clock__digit-strokes" data-strokes="0" transform="translate(2,2)">
+						<polyline class="clock__digit-stroke" points="2 0,2 16" />
+
+						<polyline class="clock__digit-stroke" points="6 0,6 16" />
+
+						<polyline class="clock__digit-stroke" points="10 0,10 16" />
+
+						<polyline class="clock__digit-stroke" points="14 0,14 16" />
+
+						<polyline class="clock__digit-stroke" points="0 2,16 14" />
+					</g>
+
+					<g class="clock__digit-strokes" data-strokes="0" transform="translate(22,2)">
+						<polyline class="clock__digit-stroke" points="2 0,2 16" />
+
+						<polyline class="clock__digit-stroke" points="6 0,6 16" />
+
+						<polyline class="clock__digit-stroke" points="10 0,10 16" />
+
+						<polyline class="clock__digit-stroke" points="14 0,14 16" />
+
+						<polyline class="clock__digit-stroke" points="0 2,16 14" />
+					</g>
+
+					<g class="clock__digit-strokes" data-strokes="0" transform="translate(2,22)">
+						<polyline class="clock__digit-stroke" points="2 0,2 16" />
+
+						<polyline class="clock__digit-stroke" points="6 0,6 16" />
+
+						<polyline class="clock__digit-stroke" points="10 0,10 16" />
+
+						<polyline class="clock__digit-stroke" points="14 0,14 16" />
+
+						<polyline class="clock__digit-stroke" points="0 2,16 14" />
+					</g>
+
+					<g class="clock__digit-strokes" data-strokes="0" transform="translate(22,22)">
+						<polyline class="clock__digit-stroke" points="2 0,2 16" />
+
+						<polyline class="clock__digit-stroke" points="6 0,6 16" />
+
+						<polyline class="clock__digit-stroke" points="10 0,10 16" />
+
+						<polyline class="clock__digit-stroke" points="14 0,14 16" />
+
+						<polyline class="clock__digit-stroke" points="0 2,16 14" />
+					</g>
+
+					<g class="clock__digit-strokes" data-strokes="0" transform="translate(2,42)">
+						<polyline class="clock__digit-stroke" points="2 0,2 16" />
+
+						<polyline class="clock__digit-stroke" points="6 0,6 16" />
+
+						<polyline class="clock__digit-stroke" points="10 0,10 16" />
+
+						<polyline class="clock__digit-stroke" points="14 0,14 16" />
+
+						<polyline class="clock__digit-stroke" points="0 2,16 14" />
+					</g>
+
+					<g class="clock__digit-strokes" data-strokes="0" transform="translate(22,42)">
+						<polyline class="clock__digit-stroke" points="2 0,2 16" />
+
+						<polyline class="clock__digit-stroke" points="6 0,6 16" />
+
+						<polyline class="clock__digit-stroke" points="10 0,10 16" />
+
+						<polyline class="clock__digit-stroke" points="14 0,14 16" />
+
+						<polyline class="clock__digit-stroke" points="0 2,16 14" />
+					</g>
+
+					<g class="clock__digit-strokes" data-strokes="0" transform="translate(2,62)">
+						<polyline class="clock__digit-stroke" points="2 0,2 16" />
+
+						<polyline class="clock__digit-stroke" points="6 0,6 16" />
+
+						<polyline class="clock__digit-stroke" points="10 0,10 16" />
+
+						<polyline class="clock__digit-stroke" points="14 0,14 16" />
+
+						<polyline class="clock__digit-stroke" points="0 2,16 14" />
+					</g>
+
+					<g class="clock__digit-strokes" data-strokes="0" transform="translate(22,62)">
+						<polyline class="clock__digit-stroke" points="2 0,2 16" />
+
+						<polyline class="clock__digit-stroke" points="6 0,6 16" />
+
+						<polyline class="clock__digit-stroke" points="10 0,10 16" />
+
+						<polyline class="clock__digit-stroke" points="14 0,14 16" />
+
+						<polyline class="clock__digit-stroke" points="0 2,16 14" />
+					</g>
+
+					<g class="clock__digit-strokes" data-strokes="0" transform="translate(2,82)">
+						<polyline class="clock__digit-stroke" points="2 0,2 16" />
+
+						<polyline class="clock__digit-stroke" points="6 0,6 16" />
+
+						<polyline class="clock__digit-stroke" points="10 0,10 16" />
+
+						<polyline class="clock__digit-stroke" points="14 0,14 16" />
+
+						<polyline class="clock__digit-stroke" points="0 2,16 14" />
+					</g>
+
+					<g class="clock__digit-strokes" data-strokes="0" transform="translate(22,82)">
+						<polyline class="clock__digit-stroke" points="2 0,2 16" />
+
+						<polyline class="clock__digit-stroke" points="6 0,6 16" />
+
+						<polyline class="clock__digit-stroke" points="10 0,10 16" />
+
+						<polyline class="clock__digit-stroke" points="14 0,14 16" />
+
+						<polyline class="clock__digit-stroke" points="0 2,16 14" />
+					</g>
+
+					<g class="clock__digit-strokes" data-strokes="0" transform="translate(2,102)">
+						<polyline class="clock__digit-stroke" points="2 0,2 16" />
+
+						<polyline class="clock__digit-stroke" points="6 0,6 16" />
+
+						<polyline class="clock__digit-stroke" points="10 0,10 16" />
+
+						<polyline class="clock__digit-stroke" points="14 0,14 16" />
+
+						<polyline class="clock__digit-stroke" points="0 2,16 14" />
+					</g>
+
+					<g class="clock__digit-strokes" data-strokes="0" transform="translate(22,102)">
+						<polyline class="clock__digit-stroke" points="2 0,2 16" />
+
+						<polyline class="clock__digit-stroke" points="6 0,6 16" />
+
+						<polyline class="clock__digit-stroke" points="10 0,10 16" />
+
+						<polyline class="clock__digit-stroke" points="14 0,14 16" />
+					</g>
+				</g>
+			</g>
+		</svg>
+
+		<script src="app.js"></script>
+	</body>
+</html>

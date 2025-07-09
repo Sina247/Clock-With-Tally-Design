@@ -1,0 +1,78 @@
+* {
+  border: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --hue: 223;
+  --fg: hsl(var(--hue), 10%, 90%);
+  --trans-dur: 0.3s;
+  font-size: calc(16px + (32 - 16) * (100vw - 320px) / (2560 - 320));
+}
+
+body {
+  background: url(https://assets.codepen.io/416221/chalkboard.jpg) center / 18em auto;
+  color: var(--fg);
+  display: flex;
+  font: 1em/1.5 "Indie Flower", cursive;
+  height: 100vh;
+  min-height: 480px;
+}
+
+.clock {
+  display: block;
+  margin: auto;
+  width: 16em;
+  height: auto;
+}
+
+.clock__digit-stroke {
+  stroke-dasharray: 16 16;
+  stroke-dashoffset: 16;
+  transition: stroke-dashoffset var(--trans-dur) cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+.clock__digit-stroke:last-child {
+  stroke-dasharray: 21 21;
+  stroke-dashoffset: 21;
+}
+
+[data-strokes="1"] .clock__digit-stroke:nth-child(-n + 1),
+[data-strokes="2"] .clock__digit-stroke:nth-child(-n + 2),
+[data-strokes="3"] .clock__digit-stroke:nth-child(-n + 3),
+[data-strokes="4"] .clock__digit-stroke:nth-child(-n + 4),
+[data-strokes="5"] .clock__digit-stroke:nth-child(-n + 5) {
+  stroke-dashoffset: 0;
+}
+
+[data-strokes="0"] .clock__digit-stroke {
+  transition-duration: 0.1s;
+  transition-timing-function: linear;
+}
+
+[data-strokes="0"]:nth-child(1) .clock__digit-stroke,
+[data-strokes="0"]:nth-child(2) .clock__digit-stroke {
+  transition-delay: 0.5s;
+}
+
+[data-strokes="0"]:nth-child(3) .clock__digit-stroke,
+[data-strokes="0"]:nth-child(4) .clock__digit-stroke {
+  transition-delay: 0.4s;
+}
+
+[data-strokes="0"]:nth-child(5) .clock__digit-stroke,
+[data-strokes="0"]:nth-child(6) .clock__digit-stroke {
+  transition-delay: 0.3s;
+}
+
+[data-strokes="0"]:nth-child(7) .clock__digit-stroke,
+[data-strokes="0"]:nth-child(8) .clock__digit-stroke {
+  transition-delay: 0.2s;
+}
+
+[data-strokes="0"]:nth-child(9) .clock__digit-stroke,
+[data-strokes="0"]:nth-child(10) .clock__digit-stroke {
+  transition-delay: 0.1s;
+}
