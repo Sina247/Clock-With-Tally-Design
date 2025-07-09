@@ -1,4 +1,4 @@
-# ⏰ Clock With Tally Design
+# 🕰️ Clock With Tally Design
 
 A beautifully crafted clock interface inspired by tally marks, combining minimalist design with functional timekeeping. Perfect for learning or showcasing DOM manipulation and time-based UI updates using only vanilla JavaScript.
 
